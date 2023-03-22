@@ -13,6 +13,7 @@ export interface Games {
   parent_platforms: { platform: Platform }[];
   metacritic: number;
   genres: Genre[];
+  rating_top: number;
 }
 export interface FetchGamesResponse {
   count: number;
