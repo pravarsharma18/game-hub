@@ -1,7 +1,8 @@
-const getCroppedUrl=(url:string)=>{
-    let target = "media/"
-    const index = url.indexOf(target) + target.length
-    return url.slice(0, index) + "crop/600/400/" + url.slice(index)
-}
+const getCroppedUrl = (url: string) => {
+  if (!url) return "";
+  let target = "media/";
+  const index = url.indexOf(target) + target.length;
+  return url.slice(0, index) + "crop/600/400/" + url.slice(index);
+};
 
-export default getCroppedUrl
+export default getCroppedUrl;
