@@ -5,14 +5,14 @@ const ColorModeSwitch = () => {
 
   return (
     <HStack>
-      <Flex alignItems="space-between">
-        <Switch
-          colorScheme="green"
-          onChange={toggleColorMode}
-          isChecked={colorMode === "dark" ? true : false}
-        />
-        <Text>{colorMode === "light" ? "Dark" : "Light"} Mode</Text>
-      </Flex>
+      <Switch
+        colorScheme="green"
+        onChange={toggleColorMode}
+        isChecked={colorMode === "dark" ? true : false}
+      />
+      <Text whiteSpace="nowrap">
+        {colorMode === "light" ? "Dark" : "Light"} Mode
+      </Text>
     </HStack>
   );
 };
